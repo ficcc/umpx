@@ -1,0 +1,141 @@
+@import "global.scss";
+@import "header.scss";
+@import "card-block.scss";
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+main {
+  scroll-behavior: smooth;
+}
+header {
+  z-index: 1;
+  position: fixed;
+}
+section {
+  display: block;
+  height: 110vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+section.intro {
+  .element {
+    font-size: 75px;
+    font-weight: 700;
+    color: #05ffa1;
+    font-family: $comforta;
+    height: 100%;
+    padding-top: 40vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-bottom: 15px;
+  }
+  .typed-cursor {
+    font-size: 70px;
+  }
+  .int-text {
+    padding-top: 30px;
+    color: $mint-cream;
+
+    h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+      font-family: $fontrobo;
+    }
+  }
+}
+section.work {
+  .heading {
+    padding-top: 150px;
+    h1 {
+      margin-left: 150px;
+      font-size: 100px;
+      color: $vapor-yellow;
+    }
+    p {
+      font-size: 25px;
+      color: $mint-cream;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    h1 + p {
+      margin-top: 60px;
+    }
+  }
+}
+section.skills {
+  .heading {
+    padding-top: 150px;
+    h1 {
+      margin-left: 50px;
+      font-size: 100px;
+      color: $bright-maroon;
+    }
+  }
+  .skill {
+    margin-top: 50px;
+    padding: 50px 50px;
+    background-color: transparent;
+    border-radius: 15px;
+    font-family: $secularone;
+    color: $vapor-purple;
+    font-size: 40px;
+    z-index: 999;
+
+    &.html:hover,
+    &.js:hover,
+    &.node:hover {
+      transform: scale(2);
+      transform: translate(-100%, -100%);
+      background-color: transparent;
+    }
+    &.css:hover,
+    &.bs:hover,
+    &.al:hover {
+      transform: scale(2);
+      transform: translate(100%, -100%);
+      background-color: transparent;
+    }
+  }
+}
+section.contact {
+  .heading {
+    padding-top: 150px;
+    h1 {
+      margin-left: 350px;
+      font-size: 100px;
+      color: $persian-green;
+    }
+  }
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+
+    a {
+      color: $vapor-blue;
+      margin-right: 60px;
+      i {
+        font-size: 100px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        opacity: 0.9;
+        color: $vapor-green;
+      }
+    }
+  }
+}
