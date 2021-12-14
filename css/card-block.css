@@ -8,12 +8,12 @@
 }
 @media (max-width: 1440px) {
   .hero-container {
-    margin-top: 55px;
+    margin-top: 45px;
   }
 }
 @media (max-width: 1024px) {
   .hero-container {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -23,14 +23,14 @@
 }
 
 .main-container {
-  width: 270px;
+  width: 280px;
   height: 500px;
   position: relative;
   margin: 0 20px;
 }
 @media (max-width: 1440px) {
   .main-container {
-    height: 420px;
+    height: 400px;
   }
 }
 @media (max-width: 1024px) {
@@ -45,6 +45,7 @@
   top: 0;
   left: 20px;
   z-index: 9999;
+  overflow: visible;
 }
 @media (max-width: 1440px) {
   .card-container {
@@ -89,11 +90,11 @@
 }
 @media (max-width: 1440px) {
   .disc-container {
-    height: 375px;
+    height: 360px;
     width: 240px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 990px) {
   .disc-container {
     height: 350px;
   }

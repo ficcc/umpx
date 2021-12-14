@@ -79,39 +79,20 @@ var main = {
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        375: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        425: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          centeredSlides: true,
-        },
-        480: {
+        990: {
           slidesPerView: 2,
-          spaceBetween: 30,
-          centeredSlides: false,
-        },
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        720: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 2.5,
-          spaceBetween: 20,
-        },
-        1044: {
-          slidesPerView: 3.2,
           spaceBetween: 50,
         },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+        1440: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        },
         1920: {
-          slidesPerView: 3.2,
+          slidesPerView: 6,
           spaceBetween: 20,
         },
       },

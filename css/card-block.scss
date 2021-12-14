@@ -6,10 +6,10 @@
   margin-top: 150px;
 
   @media (max-width: 1440px) {
-    margin-top: 55px;
+    margin-top: 45px;
   }
   @media (max-width: 1024px) {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   @media (max-width: 500px) {
     margin-top: 150px;
@@ -17,13 +17,13 @@
 }
 
 .main-container {
-  width: 270px;
+  width: 280px;
   height: 500px;
   position: relative;
   margin: 0 20px;
 
   @media (max-width: 1440px) {
-    height: 420px;
+    height: 400px;
   }
   @media (max-width: 1024px) {
     height: 380px;
@@ -36,6 +36,7 @@
   top: 0;
   left: 20px;
   z-index: 9999;
+  overflow: visible;
 
   @media (max-width: 1440px) {
     width: 200px;
@@ -67,10 +68,10 @@
   opacity: 0;
 
   @media (max-width: 1440px) {
-    height: 375px;
+    height: 360px;
     width: 240px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 990px) {
     height: 350px;
   }
 }
