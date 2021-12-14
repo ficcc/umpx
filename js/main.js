@@ -95,6 +95,10 @@ var main = {
           slidesPerView: 6,
           spaceBetween: 20,
         },
+        2560: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        },
       },
     })
   },
