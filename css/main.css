@@ -421,7 +421,7 @@ body {
 }
 
 main {
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 header {

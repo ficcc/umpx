@@ -16,7 +16,7 @@ body {
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 main {
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 header {
   z-index: 999999;
