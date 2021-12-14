@@ -512,6 +512,7 @@ section.work .heading h1 {
 }
 @media (max-width: 500px) {
   section.work .heading h1 {
+    font-size: 50px;
     margin-left: 20px;
   }
 }
@@ -568,7 +569,7 @@ section.skills .skill {
   section.skills .skill {
     margin-top: 30px;
     padding: 5px 5px;
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 section.skills .skill.html:hover, section.skills .skill.js:hover, section.skills .skill.node:hover {
