@@ -572,6 +572,11 @@ section.skills .skill {
     font-size: 25px;
   }
 }
+@media (max-width: 370px) {
+  section.skills .skill {
+    font-size: 15px;
+  }
+}
 section.skills .skill.html:hover, section.skills .skill.js:hover, section.skills .skill.node:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
