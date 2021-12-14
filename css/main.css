@@ -626,15 +626,16 @@ section.contact .contact-details {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  vertical-align: center;
   margin-top: 250px;
 }
 section.contact .contact-details a {
   color: #01cdfe;
-  margin-right: 60px;
+  padding-right: 60px;
 }
 @media (max-width: 500px) {
   section.contact .contact-details a {
-    margin-right: 30px;
+    padding-right: 30px;
   }
 }
 section.contact .contact-details a i {
