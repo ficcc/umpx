@@ -431,6 +431,7 @@ header {
 
 section {
   display: block;
+  overflow: hidden;
   height: 110vh;
   width: 100%;
   -webkit-box-sizing: border-box;
