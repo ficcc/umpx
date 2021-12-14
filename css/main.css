@@ -171,12 +171,34 @@
           box-sizing: border-box;
 }
 
+@media (max-width: 1024px) {
+  #nav {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .hero-container {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 150px;
+}
+@media (max-width: 1440px) {
+  .hero-container {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-container {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-container {
+    margin-top: 150px;
+  }
 }
 
 .main-container {
@@ -185,6 +207,16 @@
   position: relative;
   margin: 0 20px;
 }
+@media (max-width: 1440px) {
+  .main-container {
+    height: 420px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-container {
+    height: 380px;
+  }
+}
 
 .card-container {
   width: 230px;
@@ -192,6 +224,11 @@
   top: 0;
   left: 20px;
   z-index: 9999;
+}
+@media (max-width: 1440px) {
+  .card-container {
+    width: 200px;
+  }
 }
 
 .card {
@@ -228,6 +265,17 @@
   -webkit-box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
   opacity: 0;
+}
+@media (max-width: 1440px) {
+  .disc-container {
+    height: 375px;
+    width: 240px;
+  }
+}
+@media (max-width: 1024px) {
+  .disc-container {
+    height: 350px;
+  }
 }
 
 .main-container:hover .disc-container {
@@ -325,11 +373,21 @@
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+@media (max-width: 1440px) {
+  .disc__title {
+    font-size: 18px;
+  }
+}
 
 .disc__slogan {
   color: #999;
-  font-size: 0.9rem;
+  font-size: 15px;
   margin-bottom: 20px;
+}
+@media (max-width: 1440px) {
+  .disc__slogan {
+    font-size: 11px;
+  }
 }
 
 .disc__buy-btn {
@@ -367,7 +425,7 @@ main {
 }
 
 header {
-  z-index: 1;
+  z-index: 999999;
   position: fixed;
 }
 
@@ -377,6 +435,11 @@ section {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+@media (max-width: 1440px) {
+  section {
+    height: 100vh;
+  }
 }
 
 section.intro .element {
@@ -395,8 +458,18 @@ section.intro .element {
   vertical-align: middle;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  section.intro .element {
+    font-size: 35px;
+  }
+}
 section.intro .typed-cursor {
   font-size: 70px;
+}
+@media (max-width: 500px) {
+  section.intro .typed-cursor {
+    font-size: 35px;
+  }
 }
 section.intro .int-text {
   padding-top: 30px;
@@ -407,14 +480,39 @@ section.intro .int-text h1 {
   margin-bottom: 15px;
   font-family: "Roboto Mono", monospace;
 }
+@media (max-width: 500px) {
+  section.intro .int-text h1 {
+    font-size: 35px;
+  }
+}
 
 section.work .heading {
-  padding-top: 150px;
+  padding-top: 100px;
+}
+@media (max-width: 1440px) {
+  section.work .heading {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  section.work .heading {
+    padding-top: 15px;
+  }
 }
 section.work .heading h1 {
   margin-left: 150px;
   font-size: 100px;
   color: #fffb96;
+}
+@media (max-width: 1440px) {
+  section.work .heading h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  section.work .heading h1 {
+    margin-left: 20px;
+  }
 }
 section.work .heading p {
   font-size: 25px;
@@ -429,10 +527,25 @@ section.work .heading h1 + p {
 section.skills .heading {
   padding-top: 150px;
 }
+@media (max-width: 1440px) {
+  section.skills .heading {
+    padding-top: 50px;
+  }
+}
 section.skills .heading h1 {
-  margin-left: 50px;
+  margin-left: 70px;
   font-size: 100px;
   color: #b33951ff;
+}
+@media (max-width: 1440px) {
+  section.skills .heading h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  section.skills .heading h1 {
+    font-size: 50px;
+  }
 }
 section.skills .skill {
   margin-top: 50px;
@@ -443,6 +556,19 @@ section.skills .skill {
   color: #b967ff;
   font-size: 40px;
   z-index: 999;
+}
+@media (max-width: 1440px) {
+  section.skills .skill {
+    margin-top: 20px;
+    padding: 25px 25px;
+  }
+}
+@media (max-width: 500px) {
+  section.skills .skill {
+    margin-top: 30px;
+    padding: 5px 5px;
+    font-size: 35px;
+  }
 }
 section.skills .skill.html:hover, section.skills .skill.js:hover, section.skills .skill.node:hover {
   -webkit-transform: scale(2);
@@ -462,10 +588,26 @@ section.skills .skill.css:hover, section.skills .skill.bs:hover, section.skills 
 section.contact .heading {
   padding-top: 150px;
 }
+@media (max-width: 1440px) {
+  section.contact .heading {
+    padding-top: 50px;
+  }
+}
 section.contact .heading h1 {
   margin-left: 350px;
   font-size: 100px;
   color: #2a9d8fff;
+}
+@media (max-width: 1440px) {
+  section.contact .heading h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  section.contact .heading h1 {
+    margin-left: 40px;
+    font-size: 50px;
+  }
 }
 section.contact .contact-details {
   display: -webkit-box;
@@ -483,8 +625,23 @@ section.contact .contact-details a {
   color: #01cdfe;
   margin-right: 60px;
 }
+@media (max-width: 500px) {
+  section.contact .contact-details a {
+    margin-right: 30px;
+  }
+}
 section.contact .contact-details a i {
   font-size: 100px;
+}
+@media (max-width: 1440px) {
+  section.contact .contact-details a i {
+    font-size: 70px;
+  }
+}
+@media (max-width: 500px) {
+  section.contact .contact-details a i {
+    font-size: 40px;
+  }
 }
 section.contact .contact-details a:hover {
   -webkit-transform: scale(1.2);

@@ -15,21 +15,16 @@ var main = {
 
   smoothscroll: function () {
     $("#nav a[href^='#']").on("click", function (e) {
-      // prevent default anchor click behavior
       e.preventDefault()
 
-      // store hash
       var hash = this.hash
 
-      // animate
       $("html, body").animate(
         {
           scrollTop: $(hash).offset().top,
         },
         1000,
         function () {
-          // when done, add hash to url
-          // (default click behaviour)
           window.location.hash = hash
         }
       )
@@ -88,10 +83,15 @@ var main = {
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        // when window width is >= 480px
+        425: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          centeredSlides: true,
+        },
         480: {
           slidesPerView: 2,
           spaceBetween: 30,
+          centeredSlides: false,
         },
         // when window width is >= 640px
         640: {
@@ -103,8 +103,8 @@ var main = {
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+          slidesPerView: 2.5,
+          spaceBetween: 20,
         },
         1044: {
           slidesPerView: 3.2,

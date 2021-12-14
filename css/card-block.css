@@ -6,12 +6,37 @@
   display: flex;
   margin-top: 150px;
 }
+@media (max-width: 1440px) {
+  .hero-container {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-container {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-container {
+    margin-top: 150px;
+  }
+}
 
 .main-container {
   width: 270px;
   height: 500px;
   position: relative;
   margin: 0 20px;
+}
+@media (max-width: 1440px) {
+  .main-container {
+    height: 420px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-container {
+    height: 380px;
+  }
 }
 
 .card-container {
@@ -20,6 +45,11 @@
   top: 0;
   left: 20px;
   z-index: 9999;
+}
+@media (max-width: 1440px) {
+  .card-container {
+    width: 200px;
+  }
 }
 
 .card {
@@ -56,6 +86,17 @@
   -webkit-box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
   opacity: 0;
+}
+@media (max-width: 1440px) {
+  .disc-container {
+    height: 375px;
+    width: 240px;
+  }
+}
+@media (max-width: 1024px) {
+  .disc-container {
+    height: 350px;
+  }
 }
 
 .main-container:hover .disc-container {
@@ -153,11 +194,21 @@
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+@media (max-width: 1440px) {
+  .disc__title {
+    font-size: 18px;
+  }
+}
 
 .disc__slogan {
   color: #999;
-  font-size: 0.9rem;
+  font-size: 15px;
   margin-bottom: 20px;
+}
+@media (max-width: 1440px) {
+  .disc__slogan {
+    font-size: 11px;
+  }
 }
 
 .disc__buy-btn {
