@@ -1,9 +1,9 @@
 .cat-wrapper {
-  padding: 40px;
+  padding: 75px;
   margin: 0;
   font-family: sans-serif;
-  width: 10%;
-  height: 10%;
+  width: 17%;
+  height: 17%;
   display: flex;
   bottom: 0%;
   right: 0%;
@@ -12,6 +12,27 @@
   perspective: 100vh;
   overflow: hidden;
   position: fixed;
+
+  @media (max-width: 1440px) {
+    width: 11%;
+    height: 11%;
+    padding: 45px;
+  }
+  @media (max-width: 1440px) {
+    width: 11%;
+    height: 11%;
+    padding: 45px;
+  }
+  @media (max-width: 990px) {
+    width: 19%;
+    height: 11%;
+    padding: 45px;
+  }
+  @media (max-width: 350px) {
+    width: 45%;
+    height: 11%;
+    padding: 45px;
+  }
 }
 
 @keyframes blink {
