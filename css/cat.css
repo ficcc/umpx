@@ -27,9 +27,9 @@
     padding: 45px;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .cat-wrapper {
-    width: 11%;
+    width: 14%;
     height: 11%;
     padding: 45px;
   }
@@ -41,6 +41,13 @@
     padding: 45px;
   }
 }
+@media (max-width: 750px) {
+  .cat-wrapper {
+    width: 25%;
+    height: 11%;
+    padding: 45px;
+  }
+}
 @media (max-width: 500px) {
   .cat-wrapper {
     width: 35%;
@@ -48,7 +55,7 @@
     padding: 45px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .cat-wrapper {
     width: 45%;
     height: 11%;
