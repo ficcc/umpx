@@ -28,6 +28,11 @@
     height: 11%;
     padding: 45px;
   }
+  @media (max-width: 500px) {
+    width: 35%;
+    height: 11%;
+    padding: 45px;
+  }
   @media (max-width: 350px) {
     width: 45%;
     height: 11%;
