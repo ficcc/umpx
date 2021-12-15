@@ -1,0 +1,196 @@
+.cat-wrapper {
+  padding: 40px;
+  margin: 0;
+  font-family: sans-serif;
+  width: 10%;
+  height: 10%;
+  display: flex;
+  bottom: 0%;
+  right: 0%;
+  align-items: center;
+  justify-content: center;
+  perspective: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+  51% {
+    transform: scaleY(0);
+  }
+  52% {
+    transform: scaleY(1);
+  }
+}
+
+$whiskerMovement: 3deg;
+@keyframes whiskerShake {
+  0% {
+    transform: rotate(-$whiskerMovement);
+  }
+
+  50% {
+    transform: rotate($whiskerMovement);
+  }
+  100% {
+    transform: rotate(-$whiskerMovement);
+  }
+}
+
+.cat {
+  width: 70vh;
+  position: relative;
+  perspective: 70vh;
+
+  div {
+    position: relative;
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .head {
+    width: 100%;
+    z-index: 2;
+    perspective: 70vh;
+
+    > svg {
+      z-index: -1;
+    }
+
+    .marking {
+      z-index: 3;
+    }
+
+    .ears {
+      z-index: -2;
+    }
+
+    path {
+      fill: #fab801;
+    }
+  }
+
+  .eyes {
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    width: 45%;
+    left: 27.5%;
+    display: flex;
+    justify-content: space-between;
+
+    .eye {
+      width: 22.5%;
+      fill: #5e5f5e;
+
+      svg {
+        animation: blink 5s infinite linear;
+      }
+    }
+  }
+
+  .marking {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 30%;
+    left: 35%;
+
+    transform-origin: 50% 0;
+
+    path {
+      fill: #cd8d46;
+    }
+  }
+
+  .whiskers {
+    position: absolute;
+    width: 130%;
+    left: -15%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+
+    .whisker {
+      width: 30%;
+      fill: none;
+      stroke: #cd8d46;
+      stroke-width: 6%;
+      stroke-linecap: round;
+
+      &:nth-child(1) {
+        svg {
+          animation-delay: 1.5s;
+          transform-origin: 100% 50%;
+        }
+      }
+
+      svg {
+        transform: rotate(-3deg);
+        transform-origin: 0% 50%;
+        animation: whiskerShake 3s infinite ease-in-out;
+      }
+    }
+  }
+
+  .nose {
+    position: absolute;
+    top: 50%;
+    width: 55%;
+    left: 22.5%;
+    z-index: 3;
+
+    .st0 {
+      fill: #cd8d46;
+    }
+    .st1 {
+      fill: none;
+      stroke: #cd8d46;
+      stroke-width: 6%;
+    }
+  }
+
+  .ears {
+    position: absolute;
+    width: 100%;
+    top: -15%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+
+    .ear {
+      width: 25%;
+
+      &:nth-child(1) {
+        svg {
+          transform: scaleX(-1);
+        }
+      }
+
+      .st1 {
+        fill: #fab801;
+      }
+
+      .st2 {
+        fill: #cd8d46;
+      }
+    }
+  }
+}
+
+.test {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}

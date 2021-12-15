@@ -1,6 +1,8 @@
 @import "global.scss";
 @import "header.scss";
 @import "card-block.scss";
+@import "cat.scss";
+@import "hexroll.scss";
 
 html,
 body {
@@ -9,6 +11,7 @@ body {
   width: 100%;
   padding: 0;
   scroll-behavior: smooth;
+  background-color: #264653;
   // overflow: hidden;
 }
 ::-webkit-scrollbar {
@@ -117,7 +120,7 @@ section.skills {
     h1 {
       margin-left: 70px;
       font-size: 100px;
-      color: $bright-maroon;
+      color: $vapor-purple;
 
       @media (max-width: 1440px) {
         font-size: 70px;
@@ -134,7 +137,7 @@ section.skills {
     background-color: transparent;
     border-radius: 15px;
     font-family: $secularone;
-    color: $vapor-purple;
+    color: $old-lavender;
     font-size: 40px;
     z-index: 999;
 
@@ -152,20 +155,20 @@ section.skills {
       font-size: 15px;
     }
 
-    &.html:hover,
-    &.js:hover,
-    &.node:hover {
-      transform: scale(2);
-      transform: translate(-100%, -100%);
-      background-color: transparent;
-    }
-    &.css:hover,
-    &.bs:hover,
-    &.al:hover {
-      transform: scale(2);
-      transform: translate(100%, -100%);
-      background-color: transparent;
-    }
+    // &.html:hover,
+    // &.js:hover,
+    // &.node:hover {
+    //   transform: scale(2);
+
+    //   background-color: transparent;
+    // }
+    // &.css:hover,
+    // &.bs:hover,
+    // &.al:hover {
+    //   transform: scale(2);
+
+    //   background-color: transparent;
+    // }
   }
 }
 section.contact {
