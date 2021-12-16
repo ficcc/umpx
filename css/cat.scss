@@ -1,9 +1,9 @@
 .cat-wrapper {
-  padding: 75px;
+  padding: 100px;
   margin: 0;
   font-family: sans-serif;
-  width: 17%;
-  height: 17%;
+  width: 20vw;
+  height: 20vh;
   display: flex;
   bottom: 0%;
   right: 0%;
@@ -14,34 +14,23 @@
   position: fixed;
 
   @media (max-width: 1440px) {
-    width: 11%;
-    height: 11%;
-    padding: 45px;
+    padding: 75px;
   }
   @media (max-width: 1200px) {
-    width: 14%;
-    height: 11%;
-    padding: 45px;
+    padding: 50px;
   }
   @media (max-width: 990px) {
-    width: 19%;
-    height: 11%;
+    width: 30vw;
     padding: 45px;
   }
-  @media (max-width: 750px) {
-    width: 25%;
-    height: 11%;
-    padding: 45px;
+  @media (max-width: 769px) {
+    padding: 57px;
   }
   @media (max-width: 500px) {
-    width: 35%;
-    height: 11%;
-    padding: 45px;
+    padding: 15px;
   }
   @media (max-width: 375px) {
-    width: 45%;
-    height: 11%;
-    padding: 45px;
+    padding: 5px;
   }
 }
 

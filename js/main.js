@@ -79,6 +79,10 @@ var main = {
           slidesPerView: 1,
           spaceBetween: 20,
         },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
         990: {
           slidesPerView: 2,
           spaceBetween: 50,

@@ -1,9 +1,9 @@
 .cat-wrapper {
-  padding: 75px;
+  padding: 100px;
   margin: 0;
   font-family: sans-serif;
-  width: 17%;
-  height: 17%;
+  width: 20vw;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,44 +22,33 @@
 }
 @media (max-width: 1440px) {
   .cat-wrapper {
-    width: 11%;
-    height: 11%;
-    padding: 45px;
+    padding: 75px;
   }
 }
 @media (max-width: 1200px) {
   .cat-wrapper {
-    width: 14%;
-    height: 11%;
-    padding: 45px;
+    padding: 50px;
   }
 }
 @media (max-width: 990px) {
   .cat-wrapper {
-    width: 19%;
-    height: 11%;
+    width: 30vw;
     padding: 45px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 769px) {
   .cat-wrapper {
-    width: 25%;
-    height: 11%;
-    padding: 45px;
+    padding: 57px;
   }
 }
 @media (max-width: 500px) {
   .cat-wrapper {
-    width: 35%;
-    height: 11%;
-    padding: 45px;
+    padding: 15px;
   }
 }
 @media (max-width: 375px) {
   .cat-wrapper {
-    width: 45%;
-    height: 11%;
-    padding: 45px;
+    padding: 5px;
   }
 }
 
