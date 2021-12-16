@@ -803,8 +803,6 @@ header {
 section {
   display: block;
   overflow: hidden;
-  height: 110vh;
-  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -814,6 +812,10 @@ section {
   }
 }
 
+section.intro {
+  height: 110vh;
+  width: 100%;
+}
 section.intro .element {
   font-size: 75px;
   font-weight: 700;

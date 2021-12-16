@@ -28,8 +28,7 @@ header {
 section {
   display: block;
   overflow: hidden;
-  height: 110vh;
-  width: 100%;
+
   box-sizing: border-box;
 
   @media (max-width: 1440px) {
@@ -37,6 +36,9 @@ section {
   }
 }
 section.intro {
+  height: 110vh;
+  width: 100%;
+
   .element {
     font-size: 75px;
     font-weight: 700;
